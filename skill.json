@@ -1,0 +1,35 @@
+{
+  "name": "genpark-agentic-crm-relationship-graph-orchestrator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - AI-native CRM relationship graph, pipeline auto-sync & deal scoring orchestrator.",
+  "author": "genpark",
+  "category": "sales",
+  "tags": [
+    "agentic-crm",
+    "relationship-graph",
+    "deal-scoring",
+    "pipeline-sync",
+    "ph-august4"
+  ],
+  "inputs": {
+    "contact_emails": {
+      "type": "array"
+    },
+    "deal_stage": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "relationship_strength_score": {
+      "type": "number"
+    },
+    "next_best_step": {
+      "type": "string"
+    },
+    "synced_deal_value_usd": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
